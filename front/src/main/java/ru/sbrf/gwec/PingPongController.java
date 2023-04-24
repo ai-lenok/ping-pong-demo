@@ -11,7 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/api/v1")
-public class GreetingResource {
+public class PingPongController {
     private final static Msg PING = Msg.newBuilder().setBody("ping").build();
 
     @GrpcClient
