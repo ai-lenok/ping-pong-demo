@@ -2,6 +2,15 @@
 
 ## Front
 
+### Создать native образ
+
+```shell
+mvn clean verify -Pnative \
+  -Dquarkus.container-image.build=true \
+  -Dquarkus.native.container-build=true \
+  -Dquarkus.container-image.image=IMAGE_NAME
+```
+
 ## Back
 
 Текущие границы времени ответа GRPC-сервиса
