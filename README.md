@@ -44,3 +44,23 @@ grpcurl -plaintext localhost:9000 describe ru.sbrf.gwec.Msg
 ```shell
 grpcurl -plaintext -d '{"body": "PING"}' localhost:9000 ru.sbrf.gwec.PingPong/ping
 ```
+
+## Helm-chart
+
+### Install
+
+```shell
+helm install ping-pong helm/ping-pong
+```
+
+### Upgrade
+
+```shell
+helm upgrade ping-pong helm/ping-pong
+```
+
+### uninstall
+
+```shell
+helm uninstall ping-pong
+```
