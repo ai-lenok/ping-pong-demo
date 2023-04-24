@@ -1,0 +1,11 @@
+GET http://{{host}}/api/v1/hello
+
+{}
+###
+GET http://{{host}}/api/v1/ping
+
+{}
+###
+GET http://{{host}}/q/health/ready
+
+{}
